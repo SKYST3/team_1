@@ -12,6 +12,9 @@ import { Book } from './components/Book';
 import { BookDetail } from './components/BookDetail';
 import { Movies } from './components/Movies';
 import { MovieDetail } from './components/MovieDetail';
+import VoiceRecordingPage from './pages/VoiceRecordingPage';
+import AudioPlayer from './components/AudioPlayer';
+import AudioRecorder from './components/AudioRecorder';
 import './App.css';
 
 // 임시 페이지 컴포넌트들
@@ -34,7 +37,9 @@ function App() {
           <Route path="/movie/:id" element={<MovieDetail />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/funeral" element={<FuneralPage />} />
-          <Route path="/books" element={<BookDetail />} />
+          <Route path="/voice-recording" element={<VoiceRecordingPage />} />
+          <Route path="/audio-player" element={<AudioPlayer />} />
+          <Route path="/audio-recorder" element={<AudioRecorder />} />
           <Route path="/ai" element={<div>AI 채팅 페이지</div>} />
         </Routes>
         <BottomNavBar />
@@ -43,4 +48,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
