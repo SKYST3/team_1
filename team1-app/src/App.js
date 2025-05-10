@@ -5,6 +5,7 @@ import Home from './components/Home';
 import { Photos } from './components/Photos';
 import { PhotoDetail } from './components/PhotoDetail';
 import FuneralPage from './pages/FuneralPage';
+import VoiceRecordingPage from './pages/VoiceRecordingPage';
 import './App.css';
 
 // 임시 페이지 컴포넌트들
@@ -26,6 +27,7 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/funeral" element={<FuneralPage />} />
+          <Route path="/voice-recording" element={<VoiceRecordingPage />} />
         </Routes>
         <BottomNavBar />
       </div>
@@ -33,4 +35,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
