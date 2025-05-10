@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Memori
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**맞춤형 장례식 서비스**
 
-## Available Scripts
+> 삶의 마지막 또한 '나답게' 마무리할 수 있도록
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📝 개요
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+현대 사회에서는 웰다잉(Well-dying)에 대한 관심이 높아지고 있으며, 개인의 마지막 순간을 자신의 가치와 추억에 맞게 설계하고자 하는 수요가 증가하고 있습니다. 그러나 전통적인 장례식은 고인의 생애를 충분히 기억하고 공유할 수 있는 디지털·메타버스 환경을 제공하지 못합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Memori**는 다음을 목표로 합니다:
 
-### `npm test`
+* 고인의 생애 기록을 생생히 보존하고 전시
+* 디지털 공간을 통해 시간과 장소의 제약 없이 추모
+* 가족과 친구가 함께 추억하며 연결될 수 있는 맞춤형 장례식 플랫폼 제공
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🎯 주요 기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **회원가입 & 인증**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   * SNS 계정 연동 로그인 (Kakao 등)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **추억 기록**
 
-### `npm run eject`
+   * **사진 전시**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     * 순간별 사진 등록
+     * 사진별 설명(그림일기 형식) 및 날짜 자동 입력
+     * 공개 범위 설정(공개/친구공개/비공개)
+     * 전시할 사진 선택 및 순서 지정
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   * **음악 기록**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     * 플레이리스트 제작 및 재생
+     * 공간별 배경음악 설정
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   * **독서 & 영화 기록**
 
-## Learn More
+     * 독서/영화 감상 리스트 등록 및 평점
+     * 친구들과 기록 공유 기능
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **커뮤니티 기능**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * 디지털 방명록 (추모 메시지 작성)
+   * 친구·가족 초대 및 그룹 대화
 
-### Code Splitting
+4. **고인 대화 AI 챗봇**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * 챗봇 프로필 생성 (고인의 특징 입력)
+   * 학습 데이터 생성 (생전 대화/메모 활용)
+   * 가상 대화 인터페이스 제공
 
-### Analyzing the Bundle Size
+5. **메타버스 장례식 구현**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   * 2D/3D Virtual Space 디자인 및 생성
+   * 가상 공간 내 사진·영상·음성 기록 재생
 
-### Making a Progressive Web App
+6. **음악 회상 공간**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   * 고인과 가족, 친구의 추억이 담긴 노래 재생
+   * 감정적 연결을 극대화하는 인터랙티브 플레이어 제공
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🏗️ 기술 스택
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Frontend**: React, TypeScript, styled-components
+* **3D Virtual Space**: React Three Fiber, drei
+* **Backend**: Spring Boot (Java), RESTful API
+* **AI/Chatbot**: Python, TensorFlow / PyTorch, custom LLM 데이터 파이프라인
+* **Storage**: AWS S3 (사진/영상/오디오), RDS (MySQL)
+* **CI/CD**: GitHub Actions, Vercel (Frontend), AWS EC2 & RDS (Backend)
