@@ -1,16 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import BottomNavBar from './components/BottomNavBar';
 import Home from './components/Home';
 import { Photos } from './components/Photos';
 import { PhotoDetail } from './components/PhotoDetail';
 import FuneralPage from './pages/FuneralPage';
+import { Music } from './components/Music';
+import { PlaylistDetail } from './components/PlaylistDetail';
+import { MusicRegister } from './components/MusicRegister';
+import { Book } from './components/Book';
+import { BookDetail } from './components/BookDetail';
+import { Movies } from './components/Movies';
+import { MovieDetail } from './components/MovieDetail';
 import './App.css';
 
 // 임시 페이지 컴포넌트들
-const Music = () => <div>음악</div>;
-const Books = () => <div>도서</div>;
-const Movies = () => <div>영화</div>;
 const Chat = () => <div>AI 채팅</div>;
 
 function App() {
@@ -22,10 +26,16 @@ function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/photos/:id" element={<PhotoDetail />} />
           <Route path="/music" element={<Music />} />
-          <Route path="/books" element={<Books />} />
+          <Route path="/music/playlist/:id" element={<PlaylistDetail />} />
+          <Route path="/music/register" element={<MusicRegister />} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/book/:id" element={<BookDetail />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/funeral" element={<FuneralPage />} />
+          <Route path="/books" element={<BookDetail />} />
+          <Route path="/ai" element={<div>AI 채팅 페이지</div>} />
         </Routes>
         <BottomNavBar />
       </div>
