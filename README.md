@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# SKYST Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 프로젝트 개요
 
-## Available Scripts
+SKYST Frontend는 음성 인식 및 인터페이스 최적화를 위한 프로젝트입니다. 사용자는 직관적인 UI를 통해 실시간 음성 녹음과 플레이백을 수행할 수 있으며, Zepeto API를 활용한 3D 가구 모델 배치 기능이 포함되어 있습니다.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ 주요 기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Voice Recognition**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   * 음성 녹음 및 실시간 텍스트 변환
+   * 오디오 파일 로컬 저장 및 재생 기능
 
-### `npm test`
+2. **3D Virtual Space**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   * Zepeto API와의 연동을 통해 3D 가구 배치
+   * 사용자 인벤토리 기반 가구 관리
 
-### `npm run build`
+3. **Bottom Navigation Bar**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   * 주요 화면 간 빠른 전환을 위한 네비게이션 바 제공
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 설치 및 실행 방법
 
-### `npm run eject`
+1. 레포지토리 클론:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/SKYST3/team_1.git
+   cd team_1
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. 패키지 설치:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. 로컬 서버 실행:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   웹 브라우저에서 [http://localhost:3000](http://localhost:3000)으로 접속합니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📂 프로젝트 구조
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+team_1/
+├── team1-app/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AudioPlayer.jsx
+│   │   │   ├── AudioRecorder.jsx
+│   │   │   └── BottomNavBar.js
+│   │   ├── pages/
+│   │   │   └── VoiceRecordingPage.jsx
+│   │   ├── assets/
+│   │   │   └── icon/
+│   │   └── App.js
+│   ├── public/
+│   └── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 💡 사용 방법
 
-### Making a Progressive Web App
+1. **음성 녹음**: `VoiceRecordingPage`에서 녹음 시작 버튼 클릭
+2. **오디오 재생**: 녹음된 파일을 리스트에서 클릭하여 재생
+3. **3D 공간 편집**: Zepeto API와 연동된 가구 배치 가능
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🤝 기여 방법
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. 새로운 브랜치 생성:
 
-### Deployment
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+2. 변경 사항 커밋:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   git commit -m "Add your message"
+   ```
+3. 원격 저장소에 푸시:
 
-### `npm run build` fails to minify
+   ```bash
+   git push origin feature/your-feature
+   ```
+4. PR(Pull Request) 생성
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
