@@ -41,12 +41,15 @@ const NavItem = styled.div`
     width: 24px;
     height: 24px;
     margin-bottom: 4px;
-    filter: ${props => props.isActive ? 'invert(57%) sepia(89%) saturate(1771%) hue-rotate(247deg) brightness(97%) contrast(98%)' : 'none'};
+    filter: ${(props) => 
+      props.$isActive
+        ? 'invert(57%) sepia(89%) saturate(1771%) hue-rotate(247deg) brightness(97%) contrast(98%)'
+        : 'none'};
   }
 
   span {
     font-size: 12px;
-    color: ${props => props.isActive ? '#C966EC' : '#666'};
+    color: ${(props) => (props.$isActive ? '#C966EC' : '#666')};
   }
 `;
 
@@ -100,7 +103,7 @@ const BottomNavBar = () => {
         return (
           <NavItem 
             key={index}
-            isActive={isActive}
+            $isActive={isActive} // 수정된 부분
             onClick={() => navigate(item.path)}
           >
             <img 
@@ -115,4 +118,4 @@ const BottomNavBar = () => {
   );
 };
 
-export default BottomNavBar; 
+export default BottomNavBar;

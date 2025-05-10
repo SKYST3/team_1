@@ -15,10 +15,8 @@ import { MovieDetail } from './components/MovieDetail';
 import VoiceRecordingPage from './pages/VoiceRecordingPage';
 import AudioPlayer from './components/AudioPlayer';
 import AudioRecorder from './components/AudioRecorder';
+import AIChatPage from './pages/AIChatPage';
 import './App.css';
-
-// 임시 페이지 컴포넌트들
-const Chat = () => <div>AI 채팅</div>;
 
 function App() {
   return (
@@ -35,12 +33,12 @@ function App() {
           <Route path="/book/:id" element={<BookDetail />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/chat" element={<AIChatPage />} />
           <Route path="/funeral" element={<FuneralPage />} />
           <Route path="/voice-recording" element={<VoiceRecordingPage />} />
           <Route path="/audio-player" element={<AudioPlayer />} />
           <Route path="/audio-recorder" element={<AudioRecorder />} />
-          <Route path="/ai" element={<div>AI 채팅 페이지</div>} />
+          <Route path="/chat" element={<AIChatPage />} />
         </Routes>
         <BottomNavBar />
       </div>
@@ -49,3 +47,4 @@ function App() {
 }
 
 export default App;
+""
